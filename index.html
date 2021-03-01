@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CreditCalculator</title>
+  </head>
+  <body>
+    <h1>Calculation Credit</h1>
+    <div class="flex__wrapper">
+      <div class="calculator__content">
+        <div class="calculator__content-body">
+          <div class="input__wrapper">
+            <div class="title">Property value</div>
+            <div class="input">
+              <input type="number" id="total-cost" value="0" />
+            </div>
+            <div class="input">
+              <input
+                type="range"
+                min="0"
+                max="10000"
+                id="total-cost-range"
+                value="0"
+                class="input-range"
+              />
+            </div>
+          </div>
+          <div class="input-wrapper">
+            <div class="title">An initial free</div>
+            <div class="input">
+              <input type="number" id="initial-fee" value="0" />
+            </div>
+            <div class="input">
+              <input
+                type="range"
+                min="30"
+                max="10000"
+                value="0"
+                id="an-initial-free-range"
+                class="input-range"
+              />
+            </div>
+          </div>
+          <div class="input__wrapper">
+            <div class="title">Credit Term</div>
+            <div class="input">
+              <input type="number" id="credit-term" value="0" />
+            </div>
+            <div class="input">
+              <input
+                type="range"
+                min="1"
+                max="20"
+                id="credit-term-range"
+                value="0"
+                class="input-range"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="calculator__content-title"></div>
+        <div class="calculator__content-body-left-btns">
+          <h2>Choose bank</h2>
+          <button data-name="bcr" class="bank active">
+            <div class="text">BCR</div>
+            <div class="value">8,7%</div>
+          </button>
+          <button data-name="brd" class="bank">
+            <div class="text">BRD</div>
+            <div class="value">8,4%</div>
+          </button>
+          <button data-name="trans" class="bank">
+            <div class="text">Transilvania</div>
+            <div class="value">7,9%</div>
+          </button>
+          <button data-name="raif" class="bank">
+            <div class="text">Raiffaisen</div>
+            <div class="value">9,2%</div>
+          </button>
+        </div>
+      </div>
+      <div class="calculator__content-body-right">
+        <div class="final__results-wrapper">
+          <div class="final__result-item">
+            <div class="title">Amount of credit-term</div>
+            <div class="value" id="amount-of-credit">0 <span>RON</span></div>
+          </div>
+          <div class="final__result-item">
+            <div class="title">Monthly-payment</div>
+            <div class="value" id="monthly-payment">0 <span>RON</span></div>
+          </div>
+          <div class="final__result-item">
+            <div class="title">Recommended income</div>
+            <div class="value" id="recommended-income">0 <span>RON</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
